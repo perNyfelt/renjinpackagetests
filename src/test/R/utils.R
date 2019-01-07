@@ -5,7 +5,7 @@
 library("hamcrest")
 library("utils")
 
-test.download.file <- function() {
+test.downloadFile <- function() {
     url <- "http://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleControlsPopulation.csv"
     filename <- basename(url)
     download.file(url, destfile = filename)
