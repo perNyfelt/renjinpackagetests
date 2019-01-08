@@ -120,6 +120,7 @@
         <version>1.0-SNAPSHOT</version>
         <configuration>
           <testFailureIgnore>true</testFailureIgnore>
+          <printSuccess>true</printSuccess>
         </configuration>
         <executions>
           <execution>
