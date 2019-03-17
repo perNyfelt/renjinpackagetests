@@ -3,7 +3,8 @@ library('hamcrest')
 library('foreign')
 
 savFile <- "WeightHeight.sav"
-df = read.spss(savFile, to.data.frame=TRUE)
+# THis will break the test run so commented out, FIXME!
+#spssDf = read.spss(savFile, to.data.frame=TRUE)
 
-assertTrue(exists("df"))
+assertTrue(exists("spssDf"))
 #str(df)

@@ -5,9 +5,7 @@ stopifnot(file.exists(excelFile))
 # xlsx is not honoring working dir properly, must use absolute path
 excelFile <- normalizePath(excelFile)
 
-workbook <- loadWorkbook(excelFile)
-excelDf <- readColumns(getSheets(workbook)[[1]], startColumn = 2, endColumn = 12, startRow = 2, endRow = 12, header = TRUE)
-
+excelDf <- read.xlsx(excelFile, 1, colIndex=c(2:12), startRow = 2, endRow = 12, header = TRUE)
 expectedDf <- mtcars[1:10,]
 
 assertThat(nrow(expectedDf), identicalTo(nrow(excelDf)))
