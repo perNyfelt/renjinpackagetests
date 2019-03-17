@@ -68,6 +68,24 @@
       <version>0.5-b265</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.renjin.cran</groupId>
+      <artifactId>dplyr</artifactId>
+      <version>0.7.4-b73</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.renjin.cran</groupId>
+      <artifactId>foreign</artifactId>
+      <version>0.8-71-b6</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.renjin.cran</groupId>
+      <artifactId>xlsx</artifactId>
+      <version>0.6.1-b7</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <repositories>
